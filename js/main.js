@@ -18,7 +18,7 @@ class player{
     draw(){
         fill("red")
         console.log()
-        //rect(this.x, this.y, this.height, this.width)
+        rect(this.x, this.y, this.height, this.width)
         if(this.velocityX > 0){
             //image(spritesheet,this.x,this.y,80,80,160,0,80,80)
             
