@@ -19,11 +19,9 @@ class player{
     draw(){
         fill("red")
         console.log()
-        rect(this.x, this.y, this.height, this.width)
+        //rect(this.x, this.y, this.height, this.width)
         if(this.velocityX > 0){
-            //image(spritesheet,this.x,this.y,80,80,160,0,80,80)
-            
-            //image(spritesheet,this.x,this.y,80,80,80,0,80,80);
+           
             this.walkcycle(this.x);
 
             this.direction = "right";
@@ -31,7 +29,7 @@ class player{
         if(this.velocityX < 0){
             push()
             scale(-1,1);
-            // image(spritesheet,-this.x,this.y,80,80,80,0,80,80)
+            
             this.walkcycle(-this.x);
             pop()
             this.direction = "left";
@@ -55,7 +53,7 @@ class player{
     }
     walkcycle(x){
         
-        // image(spritesheet,this.x,this.y,80,80,80,0,80,80);
+        
         if(frameCount % 100 < 6.25){
             image(this.spritesheet,x,this.y,80,80,80,0,80,80);
         }
