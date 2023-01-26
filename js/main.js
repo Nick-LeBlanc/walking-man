@@ -147,10 +147,10 @@ function draw() {
         player1.velocityX = 5;
     }
     if(keyPressed.d){
-        player2.velocityX = -5;
+        player2.velocityX = 5;
     }
     if(keyPressed.a){
-        player2.velocityX = 5;
+        player2.velocityX = -5;
     }
 }
 
