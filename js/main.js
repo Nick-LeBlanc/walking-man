@@ -5,6 +5,7 @@ let player1;
 
 class player{
     constructor(spritesheet, x, y){
+        console.log("player initialised")
         this.height = 80;
         this.width = 80;
         this.velocityX = 0;
