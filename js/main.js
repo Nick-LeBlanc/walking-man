@@ -5,7 +5,7 @@ let player1;
 
 class player{
     constructor(spritesheet, x, y){
-        console.log("player initialised")
+        console.log("player initialized")
         this.height = 80;
         this.width = 80;
         this.velocityX = 0;
@@ -141,16 +141,18 @@ function draw() {
     //movement
     if(keyPressed.ArrowLeft){
         player1.velocityX = -5;
+        player2.velocityX = -5;
     }
     if(keyPressed.ArrowRight){
         player1.velocityX = 5;
-    }
-    if(keyPressed.d){
         player2.velocityX = 5;
     }
-    if(keyPressed.a){
-        player2.velocityX = -5;
-    }
+    // if(keyPressed.d){
+    //     player2.velocityX = 5;
+    // }
+    // if(keyPressed.a){
+    //     player2.velocityX = -5;
+    // }
 }
 
 window.addEventListener("keydown", e=>{
